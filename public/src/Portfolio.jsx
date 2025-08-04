@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, Github, X, Eye, Code, Database, Smartphone, Globe, User, Mail, MapPin, Phone } from 'lucide-react';
 
-import Wemultiply from './assets/wemultiply.png';
-import Rhytmix from './assets/rhythmix master.png';
-import PCBulacan from './assets/pc bulacan.png';
-import Upahan from './assets/upahan.png';
-import AnimalBite from './assets/animal bite.png';
-import prolilan from './assets/prolilan.jpg';
-import profile from './assets/profile.jpg';
-import resume from './assets/Ariel-Labuson-CV-Resume.pdf';
+
+
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -64,7 +58,7 @@ const Portfolio = () => {
     ]
   };
 const handleViewResume = () => {
-    window.open(resume, '_blank');
+    window.open('../assets/Ariel-Labuson-CV-Resume.pdf', '_blank');
   };
   // Sample project data
   const projects = [
@@ -72,7 +66,7 @@ const handleViewResume = () => {
       id: 1,
       title: "E-Commerce and Online Networking",
       category: "web",
-      image: Wemultiply,
+      image: "../assets/wemultiply.png",
       description: "Modern e-commerce platform with React and Node.js featuring real-time inventory management and secure payment processing.",
       tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
       liveUrl: "https://wemultiplyapp.com/",
@@ -82,7 +76,7 @@ const handleViewResume = () => {
       id: 2,
       title: "Web Game",
       category: "web",
-      image: Rhytmix,
+      image: "../assets/rhythmix master.png",
       description: "Interactive web game for kids to learn music and rhythm.",
       tech: ["PHP", "AJAX", "MySQL", "JavaScript", "HTML", "CSS"],
       liveUrl: "#",
@@ -92,7 +86,7 @@ const handleViewResume = () => {
       id: 3,
       title: "eCommerce and inventory management",
       category: "web",
-      image: PCBulacan,
+      image: "../assets/pc bulacan.png",
       description: "Online platform for PC parts and accessories with advanced search and filtering options.",
       tech: ["PHP", "AJAX", "MySQL", "JavaScript", "HTML", "CSS"],
       liveUrl: "#",
@@ -102,7 +96,7 @@ const handleViewResume = () => {
       id: 4,
       title: "My capstone project",
       category: "web",
-      image: Upahan,
+      image: "../assets/upahan.png",
       description: "My capstone project is a comprehensive platform for rental Apartments Online.",
       tech: ["PHP", "AJAX", "MySQL", "JavaScript", "HTML", "CSS"],
       liveUrl: "#",
@@ -112,7 +106,7 @@ const handleViewResume = () => {
       id: 5,
       title: "Mobile Complain and Tracking App",
       category: "mobile",
-      image: prolilan,
+      image: "../assets/prolilan.jpg",
       description: "Comprehensive mobile app for barangay complain.",
       tech: ["React Native", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
       liveUrl: "#",
@@ -122,7 +116,7 @@ const handleViewResume = () => {
       id: 6,
       title: "Animal Bite Inventory Management System",
       category: "web",
-      image: AnimalBite,
+      image:"../assets/animal bite.png",
       description: "Animal bite inventory management system for tracking and managing animal bite cases.",
       tech: ["PHP", "AJAX", "MySQL", "JavaScript", "HTML", "CSS"],
       liveUrl: "#",
@@ -244,7 +238,7 @@ const handleViewResume = () => {
                   {/* Profile Image */}
                   <div className="text-center lg:text-left">
 
-                      <img className='w-64 h-64 mx-auto lg:mx-0 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mb-6' src={profile} alt="" />
+                      <img className='w-64 h-64 mx-auto lg:mx-0 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center mb-6' src={'../assets/profile.jpg'} alt="" />
                     
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 mt-8">
